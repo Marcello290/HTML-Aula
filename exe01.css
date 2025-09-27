@@ -1,0 +1,14 @@
+#titulo{ 
+    color: purple;
+}
+.parte1{
+    color: aquamarine;
+}
+.parte2{
+    color: rgba(93, 134, 27, 0.767);
+    font-size: 25;
+}
+.parte3{
+    color: red;
+    font-size: 20px;
+}
