@@ -1,0 +1,22 @@
+body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            gap: 15px;
+        }
+        div{
+            background-color: rgb(98, 217, 253);
+            border: 2px solid rgb(16, 46, 218); 
+            width: 550px;
+            height: 189px;
+            display: flex;
+            justify-content: center;
+            font-size: 60px;
+        }
+        table{
+            font-size: 40px;
+        }
+.Preto{
+    background-color: black;
+}
