@@ -11,4 +11,5 @@ h1{
 }
 table{
     font-size: 40px;
+    border: 2px solid black;
 }
