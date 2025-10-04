@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Dropdown</title>
+    <link rel="stylesheet" href="menudrop.css">
+    <script src="menudrop.js"></script>
+</head>
+<body>
+    <h2>Menu Dropdown Com Javascript</h2>
+
+    <div class="Dropdown">
+        <button class="drop-btn" id="btnMenu">Opções</button>
+        <div class="dropdown-conteudo" id="menu">
+            <a href="https://www.youtube.com" target="_blank" rel="nopenner noreferrer">YouTube</a>
+            <a href="https://www.google.com/" target="_blank" rel="nopenner noreferrer">Google</a>
+            <a href="https://www.facebook.com/?locale=pt_BR" target="_blank" rel="nopenner noreferrer">Facebook</a>
+        </div>
+    </div>
+
+    <script>
+        const botao = document.getElementById('btnMenu')
+        const menu = document.getElementById('menu')
+
+        botao.addEventListener('click', function(){
+            menu.classList.toggle('ativo')
+        })
+
+        window.addEventListener('click', function(event){
+            if(!event.target.matches('.drop-btn')){
+                menu.classList.remove('ativo')
+             }
+
+        })
+        
+            // if(event.target.matches('.drop-btn')){
+            //     console.log('clicou no botão')
+            // }else{
+            //     console.log('NÃO clicou no botão')
+            //    menu.classList.remove('ativo')
+            // }
+            //msm coisa só que mais longo
+
+    </script>
+</body>
+</html>
