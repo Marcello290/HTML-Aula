@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>exe ;(</title>
+    <title>exe</title>
     <link rel="stylesheet" href="exe.css">
 </head>
 <body>
@@ -12,11 +12,11 @@
 
 <form>
     <h2>Login</h2>
-    <label for="email">login:</label>
-    <input type="email" name="Email" id="Email" required>
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email" required>
     
     <label for="number">Senha:</label>
-    <input type="number" name="Senha" id="Senha" required>
+    <input type="number" name="senha" id="senha" required>
 
     <button type="submit">Enviar</button>
 
@@ -27,8 +27,8 @@
         const form = document.querySelector('form');
         form.addEventListener('subimit', function(event){
             event.preventDefault();
-            const email = document.getElementById('Email').value
-            const Senha = document.getElementById('Senha').value
+            const email = document.getElementById('email').value
+            const Senha = document.getElementById('senha').value
 
             if(Email == "teste@teste.com" && Senha == "12345")
         {alert (`Óla ${Email} Seja bem Vindo`)
@@ -37,7 +37,7 @@
         alert("Email ou Senha incorreta");
     }
     document.querySelector('form').reset();
-        });
+});
     </script>
 
 </body>
