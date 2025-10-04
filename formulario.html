@@ -3,26 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>input</title>
+    <title>formulario</title>
 </head>
 <body>
 
     <h2>Trabalho de formulário</h2>
 
-    <form>
+    <form id="meuForm">
         <label>Nome:
             <input type="text" name="nome" required>
         </label>
         
 
         <label for="email">Email:</label>
-        <input type="email" id="email" required>
+        <input type="email" id="email" >
 
         <label for="Idade">Idade</label>
-        <input type="number" id="Idade" required>
+        <input type="number" id="Idade" >
 
         <button type="submit"> Enviar </button>
     </form>
+
+    <script>
+        const form = document.getElementById('meuForm')
+
+        
+
+form.addEventListener('submit',function (event){
+    const nomeUsuario = document.getElementById('nome').value
+    event.preventDefault()
+    alert(nomeUsuario)
+})
+    </script>
     
 </body>
 </html>
