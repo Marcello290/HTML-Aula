@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java</title>
+</head>
+<body>
+    <!-- <button onclick="alert('você clicou!')">clique aqui</button> -->
+    <button onclick="perguntar()">confirmar ação</button>
+
+    <script>
+function perguntar() {
+let resposta = confirm('você tem certeza?');
+if (resposta) {
+alert('você clicou em ok');
+}
+else{
+    alert('você clicou em cancelar');
+}
+}
+
+
+    </script>
+</body>
+</html>
