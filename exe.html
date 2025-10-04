@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exe ;(</title>
+    <link rel="stylesheet" href="exe.css">
+</head>
+<body>
+    <div>
+        
+
+<form>
+    <h2>Login</h2>
+    <label for="email">login:</label>
+    <input type="email" name="Email" id="Email" required>
+    
+    <label for="number">Senha:</label>
+    <input type="number" name="Senha" id="Senha" required>
+
+    <button type="submit">Enviar</button>
+
+</form>
+    </div>
+
+    <script>
+        const form = document.querySelector('form');
+        form.addEventListener('subimit', function(event){
+            event.preventDefault();
+            const email = document.getElementById('Email').value
+            const Senha = document.getElementById('Senha').value
+
+            if(Email == "teste@teste.com" && Senha == "12345")
+        {alert (`Óla ${Email} Seja bem Vindo`)
+
+    }else{
+        alert("Email ou Senha incorreta");
+    }
+    document.querySelector('form').reset();
+        });
+    </script>
+
+</body>
+</html>

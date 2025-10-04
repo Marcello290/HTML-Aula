@@ -11,7 +11,7 @@
 
     <form id="meuForm">
         <label>Nome:
-            <input type="text" name="nome" required>
+            <input type="text" name="nome" id='nome' required>
         </label>
         
 
@@ -32,7 +32,8 @@
 form.addEventListener('submit',function (event){
     const nomeUsuario = document.getElementById('nome').value
     event.preventDefault()
-    alert(nomeUsuario)
+    // alert('óla,' + nomeUsuario + 'Seja bem vindo')
+    alert(`óla, ${nomeUsuario}! Seja bem vindo`)
 })
     </script>
     
